@@ -16,7 +16,7 @@ This is a revised edition of the Scaffold-ETH [Simple NFT Example](https://githu
 
 To run the application, git-clone this repo, open up a couple of shell command terminals and navigate to the project-root (e.g. *avax-scaffold-eth-nft*).
 
-1. From the 1st shell terminal, install dependent modules.
+#### 1. From the 1st shell terminal, install dependent modules.
 
 ```bash
 cd avax-scaffold-eth-nft/
@@ -24,7 +24,7 @@ cd avax-scaffold-eth-nft/
 yarn install
 ```
 
-2. From the 2nd terminal, specify deployer's account.
+#### 2. From the 2nd terminal, specify deployer's account.
 
 > Choose an account that owns some AVAX tokens (otherwise, get free tokens from an [AVAX faucet](https://faucet.avax-test.network/)) on the Avalanche Fuji testnet and create file *packages/hardhat/mnemonic.txt* with the account's 12-word mnemonic in it.
 
@@ -38,7 +38,7 @@ yarn deploy --network fujiAvalanche
 
 > For future references, the "deployed at" smart contract address should be saved.  Relevant transactions can be reviewed at https://testnet.snowtrace.io/.
 
-3. Back to the 1st terminal, start the Node.js server at port# 3000.
+#### 3. Back to the 1st terminal, start the Node.js server at port# 3000.
 
 ```bash
 yarn start
@@ -46,9 +46,9 @@ yarn start
 
 > This will spawn a web page on the default browser which should have been installed with the MetaMask extension.
 
-4. From the web page, connect to the MetaMask account designated as the recipient of the NFTs
+#### 4. From the web page, connect to the MetaMask account which will receive the NFTs
 
-5. Back to the 2nd terminal, mint the NFTs.
+#### 5. Back to the 2nd terminal, mint the NFTs.
 
 ```bash
 yarn mint --network fujiAvalanche
@@ -57,3 +57,7 @@ yarn mint --network fujiAvalanche
 > The address of the NFT recipient account connected to the browser app will be prompted.  Upon successful minting, images of the NFTs should be automatically displayed on the web page.
 
 > To transfer any of the NFTs to another account, enter the address of the account to be transferred to and click "transfer".  Note that the account connected to the browser app would need to own some AVAX tokens.
+
+The web page upon successful minting should look like below:
+
+<img src="packages/react-app/public/avax-scaff-eth-nft-webpage.png" alt="drawing" width="604" />
