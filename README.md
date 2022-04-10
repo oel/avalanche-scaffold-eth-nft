@@ -2,6 +2,8 @@
 
 This is a revised edition of the Scaffold-ETH [Simple NFT Example](https://github.com/scaffold-eth/scaffold-eth/tree/simple-nft-example) branch that aims to illustrate how to create NFTs on Ethereum compatible chains using the bundled tech stack of [Solidity](https://docs.soliditylang.org/), [Hardhat](https://hardhat.org/), [Ether.js](https://docs.ethers.io/) and [React](https://reactjs.org/).  In this repo, the [Avalanche Fuji testnet](https://docs.avax.network/build/tutorials/platform/fuji-workflow/), a test network for [Avalanche C-Chain](https://docs.avax.network/learn/platform-overview/#contract-chain-c-chain), is the target chain.
 
+For an overview including a highlight of key changes made to the original code branch, please visit [Genuine Blog](https://blog.genuine.com/2022/03/ethereum-compatible-nft-on-avalanche/).
+
 ## Dependencies
 
 * [Git](https://git-scm.com/)
